@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.example.notowordconvertor.NumberToWordConvertor
 
 class MainActivity : AppCompatActivity(), NumberToWordConvertorPresenter.View {
 
@@ -43,7 +44,8 @@ class MainActivity : AppCompatActivity(), NumberToWordConvertorPresenter.View {
     }
 
     override fun showConvertedWord(number: String) {
-        Toast.makeText(applicationContext,"Here we need to apply login of final login of conversion", Toast.LENGTH_SHORT).show();
+        val return_val_in_english = NumberToWordConvertor.convert(number.toInt() );
+        tvWord.setText(return_val_in_english);
     }
 
     override fun checkNumberRange() {
