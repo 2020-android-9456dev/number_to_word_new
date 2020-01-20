@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NumberToWordConvertorActivity"
+    tools:context=".MainActivity"
     android:orientation="vertical"
     android:gravity="center">
 
@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
+        android:maxLength="6"
         android:gravity="center"
         android:hint="@string/number_input_hint_txt"/>
 
