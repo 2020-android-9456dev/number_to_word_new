@@ -19,7 +19,7 @@ class CheckNumberRangeTest{
 
     @Test
     fun check_withEmptyNumber_callShowConvertedWord(){
-        presenter.convertNumberToWord("54545")
+        presenter.convertNumberToWord("0000")
 
         verify(view).checkNumberRange()
     }

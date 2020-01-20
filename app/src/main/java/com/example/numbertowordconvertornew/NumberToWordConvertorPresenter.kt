@@ -15,7 +15,7 @@ class NumberToWordConvertorPresenter {
     }
 
     fun convertNumberToWord(number: String) {
-        if (number.trim().isBlank() || number.toInt()==0) {
+        if (number.trim().isBlank() || number == "0") {
             view?.checkNumberRange()
         } else {
             view?.showConvertedWord(number)
